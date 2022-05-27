@@ -4,44 +4,79 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="./estilos/estilos.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <title>Curso CSS GRID</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>TPO - Brian Márquez</title>
     </head>
     
     <body>
         <div class="contenedor">
-            <Header class="header">
-                <h2>CONTACTO</h2>
-            </Header>
-            <nav>
-                <a href="./index.html">Home</a>
-                <a href="./contacto.html">Contacto</a>
-                <a href="./nosotros.html">Nosotros</a>
-            </nav>
+            <div class="cabezera">
+                <!-- header -->
+                <Header>
+                    <h2>BalonPié</h2>
+                </Header>
+                <!-- nav -->
+                <nav>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./contacto.html" class="active">Contacto</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
             
             <main class="contenido">
-                <h1>CONTENIDO</h1>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h1>Benzema mete al Real Madrid en cuartos de la Champions</h1>
                 <br>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, temporibus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos excepturi quidem ducimus, error ratione ut voluptatibus doloremque velit similique, a eius facilis sed maiores delectus reprehenderit porro nulla officia? Quos facilis nam facere aut libero, rem quaerat aliquid ut blanditiis.</p>
+                <p>Tres goles del francés Karim Benzema, en los minutos 61, 76 y 78, dieron la vuelta a la eliminatoria de octavos de final de la Liga de Campeones para un Real Madrid que se vio 0-2 abajo en el global tras el tanto en la primera parte, en el minuto 39, del galo Kylian Mbappé.</p><br>
+                <p>Un gol que ponía muy de cara el pase a cuartos para el París Saint-Germain, pero que no supo mantener en una segunda mitad en la que, tras encajar el primer tanto en un error en la salida de balón del italiano Gianluigi Donnarumma, se vieron superados por el juego de los locales y por el ambiente del Santiago Bernabéu.</p><br>
+                <p>De los aplausos iniciales cuando sonó el nombre de Kylian Mbappé por megafonía a que haya sido un compatriota suyo como Benzema el que finalmente decantó el encuentro.</p>
             </main>
             
             <aside class="sidebar">
-                <h3>SIDEBAR</h3>
+                <div>
+                    <h3> Real Madrid 3-1 PSG - RESUMEN</h3>
+                    <br>
+                    <p>¡Partidazo! Una final anticipada en octavos de final de la Champions.</p>
+                    <br>
+                </div>
+
+                <div class="video">
+                    <iframe width="360" height="240" src="https://www.youtube.com/embed/4jK2vjqcO5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div>
+                    <p>UEFA Champions League 2021/2022</p>
+                    <p>Octavos de final | VUELTA</p>
+                    <p>Goles: 39' K. Mbappé (P); 61' K. Benzema (RM); 76' K. Benzema (RM) y 78' K. Benzema (RM).
+                    </p>
+                </div>
+
             </aside>
 
             <div class="widget-1">
-                <h3>Widget 1</h3>
+                <h3><a href="https://www.espn.com.ar/futbol/partido/_/juegoId/622990" target="_blank">Más info sobre "Real Madrid vs PSG"</a></h3>
             </div>
 
             <div class="widget-2">
-                <h3>Widget 2</h3>
+                <h3><a href="https://es.uefa.com/uefachampionsleague/fixtures-results/#/rd/2001312" target="_blank" rel="noopener noreferrer">Más partidos interesantes</a></h3>
             </div>
 
             <footer class="footer">
-                <h3>FOOTER</h3>
+                <nav class="navfooter">
+                    <a href="./index.html">Home</a>
+                    <a href="./contacto.html">Contacto</a>
+                    <a href="./nosotros.html">Nosotros</a>
+                </nav>
+
+
             </footer>
 
         </div>

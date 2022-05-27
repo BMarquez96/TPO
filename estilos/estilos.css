@@ -148,6 +148,12 @@ li a.active, li a:hover{
     /* grid-column: span 3; */
     grid-area: footer;
 }
+.contenedor .footer .copyright{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
     .contenedor{
@@ -230,6 +236,14 @@ li a.active, li a:hover{
         right: -100%;
         text-align: center;
         transition: all .5s;
+    }
+    .contenedor .footer .copyright{
+        font-size: 12px;
+        font-weight: lighter;
+        margin-top: 10px;
+    }
+    .contenedor .footer .navfooter a{
+        justify-content: center;
     }
 
     #check:checked ~ ul{

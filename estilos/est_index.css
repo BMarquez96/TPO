@@ -203,6 +203,14 @@ li a.active, li a:hover{
         color: #FAA43D;
         
     }
+    .contenedor .footer .copyright{
+        font-size: 12px;
+        font-weight: lighter;
+        margin-top: 10px;
+    }
+    .contenedor .footer .navfooter a{
+        justify-content: center;
+    }
     #check:checked ~ ul{
         right: 0px;
     }

@@ -182,8 +182,6 @@ input:focus, textarea:focus{
         grid-template-areas:                        
                         "cabezera cabezera cabezera"
                         "contenido contenido contenido"
-                        "sidebar sidebar sidebar"
-                        "widget-1 widget-1 widget-2"
                         "footer footer footer"
     }
     .checkbtn{
@@ -225,6 +223,17 @@ input:focus, textarea:focus{
         color: #FAA43D;
         
     }
+    .contenedor .contenido .formulario{
+        margin-left: 27%;
+     }
+    .contenedor .footer .copyright{
+        font-size: 12px;
+        font-weight: lighter;
+        margin-top: 10px;
+    }
+    .contenedor .footer .navfooter a{
+        justify-content: center;
+    }
     #check:checked ~ ul{
         right: 0px;
     }
@@ -236,9 +245,6 @@ input:focus, textarea:focus{
     .contenedor{
         grid-template-areas:"cabezera cabezera cabezera"
                         "contenido contenido contenido"
-                        "sidebar sidebar sidebar"
-                        "widget-1 widget-1 widget-1"
-                        "widget-2 widget-2 widget-2"
                         "footer footer footer"
     }    
     .contenedor .cabezera header{
@@ -259,6 +265,9 @@ input:focus, textarea:focus{
         text-align: center;
         transition: all .5s;
     }
+    .contenedor .contenido .formulario{
+        margin-left: 20px;
+     }
     .contenedor .footer .copyright{
         font-size: 12px;
         font-weight: lighter;
@@ -267,7 +276,6 @@ input:focus, textarea:focus{
     .contenedor .footer .navfooter a{
         justify-content: center;
     }
-
     #check:checked ~ ul{
         right: 0px;
     }

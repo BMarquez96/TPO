@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./estilos/estilos.css">
+        <link rel="stylesheet" href="./estilos/est_contacto.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>TPO - Brian Márquez</title>
@@ -31,43 +31,48 @@
                     </ul>
                 </nav>
             </div>
-            
+
             <main class="contenido">
-                <h1>Benzema mete al Real Madrid en cuartos de la Champions</h1>
-                <br>
-                <p>Tres goles del francés Karim Benzema, en los minutos 61, 76 y 78, dieron la vuelta a la eliminatoria de octavos de final de la Liga de Campeones para un Real Madrid que se vio 0-2 abajo en el global tras el tanto en la primera parte, en el minuto 39, del galo Kylian Mbappé.</p><br>
-                <p>Un gol que ponía muy de cara el pase a cuartos para el París Saint-Germain, pero que no supo mantener en una segunda mitad en la que, tras encajar el primer tanto en un error en la salida de balón del italiano Gianluigi Donnarumma, se vieron superados por el juego de los locales y por el ambiente del Santiago Bernabéu.</p><br>
-                <p>De los aplausos iniciales cuando sonó el nombre de Kylian Mbappé por megafonía a que haya sido un compatriota suyo como Benzema el que finalmente decantó el encuentro.</p>
-            </main>
-            
-            <aside class="sidebar">
-                <div>
-                    <h3> Real Madrid 3-1 PSG - RESUMEN</h3>
-                    <br>
-                    <p>¡Partidazo! Una final anticipada en octavos de final de la Champions.</p>
-                    <br>
-                </div>
-
-                <div class="video">
-                    <iframe width="360" height="240" src="https://www.youtube.com/embed/4jK2vjqcO5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-
-                <div>
-                    <p>UEFA Champions League 2021/2022</p>
-                    <p>Octavos de final | VUELTA</p>
-                    <p>Goles: 39' K. Mbappé (P); 61' K. Benzema (RM); 76' K. Benzema (RM) y 78' K. Benzema (RM).
+                <h1>Contactanos</h1>
+				<h3>En breve nos pondremos en contacto contigo</h3>
+                <form class="formulario" action="" method="post">
+                    <p>
+                        <label for="nombre" class="form_nombre"></label>
+                        <input type="text" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        <span class="obligatorio">*</span>
                     </p>
-                </div>
+                
+                    <p>
+                        <label for="email" class="form_email"><label>
+                        <input type="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        <span class="obligatorio">*</span>
+                    </p>
+            
+                    <p>
+                        <label for="telefono" class="form_nombre"></label>
+                            <input type="tel" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>		
+                               
+                    <p>
+                        <label for="asunto" class="form_asunto"></label>
+                        <input type="text" id="asunto" required="obligatorio" placeholder="Escribe un asunto">
+                        <span class="obligatorio">*</span>
+                    </p>		
+                
+                    <p>
+                        <label for="mensaje" class="form_mensaje"></label>                     
+                            <textarea class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea> 
+                    </p>	  								
+                
+                    <button type="submit" name="enviar_formulario" id="enviar" onclick="enviarForm()"><p>Enviar</p></button>
 
-            </aside>
-
-            <div class="widget-1">
-                <h3><a href="https://www.espn.com.ar/futbol/partido/_/juegoId/622990" target="_blank">Más info sobre "Real Madrid vs PSG"</a></h3>
-            </div>
-
-            <div class="widget-2">
-                <h3><a href="https://es.uefa.com/uefachampionsleague/fixtures-results/#/rd/2001312" target="_blank" rel="noopener noreferrer">Más partidos interesantes</a></h3>
-            </div>
+                    <p class="aviso">
+                        <span class="obligatorio"> * </span>Los campos son obligatorios.
+                    </p>					
+            
+        
+                </form>   
+            </main>
 
             <footer class="footer">
                 <nav class="navfooter">
@@ -80,5 +85,7 @@
             </footer>
 
         </div>
+        
+        <script src="./scripts/validacion_form_contacto.js"></script>
     </body>
 </html>

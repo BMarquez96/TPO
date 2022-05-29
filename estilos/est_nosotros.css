@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: rgb(235, 235, 235);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas:"cabezera cabezera cabezera"
+                        "contenido contenido contenido"
+                        "footer footer footer"
+}
+
+.contenedor > div,
+.contenedor .cabezera,
+.contenedor .contenido,
+.contenedor .footer {
+    background:  white;
+    padding: 20px;
+    border-radius: 4px;
+}
+.contenedor .cabezera{
+    grid-area: cabezera;
+    height: 60px;
+    background: #12203E;
+    
+}
+.contenedor .cabezera header{
+    height: 60px;
+    width: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    background: #FAA43D;
+    color:  white;
+    font-size: 14px;
+}
+.contenedor .cabezera header h2{
+    margin: 5px;
+    justify-content: center;
+}
+
+.contenedor .cabezera nav ul{
+    float: right;
+    margin: 20px;
+    color: green;
+}
+.contenedor .cabezera nav ul li{
+    display: inline-block;
+    line-height: 20px;
+    margin: 0 5px;
+}
+
+.contenedor .cabezera nav ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+li a.active, li a:hover{
+    background: #000090;
+    transition: .7s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+.contenedor .contenido{
+    grid-area: contenido;
+    /* grid-column: span 2; */
+}
+.contenedor .contenido h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+.contenedor .footer .navfooter a{
+    display: flex;
+    font-size: 14px;
+    color: white;
+}
+
+.contenedor .footer .navfooter a:visited{
+    color: white;
+}
+.contenedor .footer .navfooter a:hover{
+    color: #FAA43D;
+}
+
+.contenedor .footer{
+    background: #12203E;
+    color: white;
+    /* grid-column: span 3; */
+    grid-area: footer;
+}
+.contenedor .footer .copyright{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-areas:                        
+                        "cabezera cabezera cabezera"
+                        "contenido contenido contenido"
+                        "footer footer footer"
+    }
+    .checkbtn{
+        display: block;
+    }
+    .contenedor .cabezera{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        border-radius: 0;
+        top: 0;
+        height: 50px;
+        padding: 5px;
+    }
+    .contenedor .cabezera header{
+        padding: 5px;
+        height: 40px;
+    }
+    .contenedor .cabezera nav ul{
+        position: fixed;
+        width: 50%;
+        height: 280px;
+        background: black;
+        top: 40px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .contenedor .cabezera nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .contenedor .cabezera nav ul li a{
+        font-size: 20px;
+    }
+    .contenedor .cabezera nav ul li a:hover, .contenedor .cabezera nav ul li a.active{
+        background: none;
+        color: #FAA43D;
+        
+    }
+    #check:checked ~ ul{
+        right: 0px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 420px){    
+    .contenedor{
+        grid-template-areas:"cabezera cabezera cabezera"
+                        "contenido contenido contenido"
+                        "footer footer footer"
+    }    
+    .contenedor .cabezera header{
+        width: 80px;
+    }
+    
+    .contenedor .cabezera header h2{
+        font-size: 14px;
+        justify-content: center;
+    }
+    .contenedor .cabezera nav ul{
+        position: fixed;
+        width: calc(100% - 40px);
+        height: 100%;
+        background: black;
+        top: 40px;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .contenedor .footer .copyright{
+        font-size: 12px;
+        font-weight: lighter;
+        margin-top: 10px;
+    }
+    .contenedor .footer .navfooter a{
+        justify-content: center;
+    }
+
+    #check:checked ~ ul{
+        right: 0px;
+    }
+}

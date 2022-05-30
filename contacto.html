@@ -35,7 +35,7 @@
             <main class="contenido">
                 <h1>Contactanos</h1>
 				<h3>En breve nos pondremos en contacto contigo</h3>
-                <form class="formulario" action="" method="post">
+                <form class="formulario" action="" method="get">
                     <p>
                         <label for="nombre" class="form_nombre"></label>
                         <input type="text" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
@@ -60,17 +60,15 @@
                     </p>		
                 
                     <p>
-                        <label for="mensaje" class="form_mensaje"></label>                     
-                            <textarea class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea> 
-                    </p>	  								
-                
+                        <label for="mensaje" class="form_mensaje"></label>                    
+                        <textarea class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu mensaje..."></textarea>
+                    </p>
+
                     <button type="submit" name="enviar_formulario" id="enviar" onclick="enviarForm()"><p>Enviar</p></button>
 
                     <p class="aviso">
                         <span class="obligatorio"> * </span>Los campos son obligatorios.
-                    </p>					
-            
-        
+                    </p>
                 </form>   
             </main>
 
@@ -83,12 +81,10 @@
                 <div class="copyright">
                     <p>© 2021 - 2022 Brian Márquez - All Rights Reserved.</p>
                 </div>
-
-
             </footer>
 
         </div>
-        
+        <!-- JavaS -->
         <script src="./scripts/validacion_form_contacto.js"></script>
     </body>
 </html>
